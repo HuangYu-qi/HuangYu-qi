@@ -1,16 +1,12 @@
 ### Hi there 👋
-
-<!--
-**HuangYu-qi/HuangYu-qi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
+<!--**HuangYu-qi/HuangYu-qi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
+Here are some ideas to get you started:    
+- 🔭 I’m currently working on 淄博职业学院，预计 2022 年毕业
 - 🌱 I’m currently learning java、Python等语言
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
-- 📫 How to reach me: 2311834699@qq.com
-- 😄 Pronouns: ...
+- 📫 How to reach me: 2311834699@qq.com欢迎给我发邮件。当然了，根据邮箱地址可以很清晰地看出我的QQ号。
+- 😄 Pronouns: My name is 黄瑜琪，我会吃饭、睡觉、玩手机
 - ⚡ Fun fact: ...
--->
+
