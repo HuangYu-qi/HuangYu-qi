@@ -1,0 +1,12 @@
+MySQL忘记密码
+一、用update直接编辑user表
+1、首先以管理员身份运行cmd，停止MySQL服务：“net stop MySQL” 
+2、使用“skip-grant-tables（启动MySQL服务器时跳过权限表认证）”命令启动MySQL
+3、重新打开一个cmd：“MySQL -u root”不用密码直接登录
+4、更改密码：“update mysql.user set authentication_string=password(‘***新密码***’) where user = ‘root’ and host = ‘localhost’”
+5、更新配置：flush privileges;
+6、停止MySQL进程（quit），重新启动使用新的密码登录：“mysql -u root -p”
+二、用set password命令
+Mysql> set password for 用户名@localhost = passowrd(‘新密码’)
+三、用mysqladmin
+mysqladmin -u用户名 -p旧密码 password新密码
