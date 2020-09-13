@@ -1,4 +1,3 @@
-MySQL忘记密码
 一、用update直接编辑user表
 1、首先以管理员身份运行cmd，停止MySQL服务：“net stop MySQL” 
 2、使用“skip-grant-tables（启动MySQL服务器时跳过权限表认证）”命令启动MySQL
