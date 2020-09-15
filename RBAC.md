@@ -10,65 +10,75 @@
 
 ### 创建表
 
-create database the_first;
+mysql> create database the_first;
 
-use the_first;
+Query OK, 1 row affected (0.00 sec)
 
-###### 创建用户表users
-create table users(
+mysql> show databases;
 
-id int comment '编号',
++--------------------+
 
-name VARCHAR(32) comment '姓名',
+| Database           |
 
-occupation VARCHAR(255) comment '职业'
++--------------------+
 
-);
+| information_schema |
 
-###### 创建角色表
-create table roles(
+| the_first             |
 
-occ1 VARCHAR(32) comment '销售',
+| mysql              |
 
-occ2 VARCHAR(32) comment '经理',
+| one                |
 
-occ3 VARCHAR(32) comment '前台'
+| performance_schema |
 
-);
+| sakila             |
 
-###### 创建权限表
-create table access(
+| test               |
 
-acc1 VARCHAR(255) comment '添加顾客',
+| world              |
 
-acc2 VARCHAR(255) comment '删除顾客',
++--------------------+
 
-acc3 VARCHAR(255) comment '查看顾客名单'
+8 rows in set (0.00 sec)
 
-);
+mysql> use the_first;
 
-###### 创建角色和权限表
-create table roleaccess(
+Database changed
 
-ra1 VARCHAR(255) comment '销售可以添加顾客',
+mysql> create table users(
 
-ra2 VARCHAR(255) comment '经理可以删除顾客',
+    -> id int comment 'id',
+    
+    -> name varchar(32) comment 'name',
+    
+    -> status varchar(32) comment 'status'
+    
+    -> );
+    
+Query OK, 0 rows affected (0.22 sec)
 
-ra3 VARCHAR(255) comment '前台可以查看顾客名单'
+mysql> insert into user values(1,'张三,'销售');
 
-);
+Query OK, 1 row affected (0.05 sec)
 
-###### 给users表中添加数据
+mysql> insert into user values(2,'李四','前台');
 
+Query OK, 1 row affected (0.04 sec)
 
+mysql> update user set id=3;
 
-###### 创建用户和角色表
-create table userrole(
+Query OK, 2 rows affected (0.07 sec)
 
-ur1 VARCHAR(255) comment '张三是销售',
+Rows matched: 2  Changed: 2  Warnings: 0
 
-ur2 VARCHAR(255) comment '李四是经理',
+mysql> delete from user where name='王五';
+Query OK, 1 row affected (0.03 sec)
 
-ur3 VARCHAR(255) comment '王五是前台'
-
-);
+mysql> select*from user;
++------+------+--------+
+| id   | name | status |
++------+------+--------+
+|    3 | 李四  | 前台 |
++------+------+--------+
+1 row in set (0.00 sec)
